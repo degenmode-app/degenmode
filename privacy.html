@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Privacy Policy for DEGEN MODE Android application.">
+<title>Privacy Policy — DEGEN MODE</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav><div class="wrap nav-inner"><div class="brand">DEGEN <span>MODE</span></div><div class="navlinks"><a href="index.html">Home</a></div></div></nav>
+<main class="policy">
+<div class="eyebrow">PRIVACY POLICY</div><h1>Privacy Policy</h1>
+<p class="muted"><strong>Effective date:</strong> 4 October 2026</p>
+<p>This Privacy Policy explains how the DEGEN MODE Android application ("DEGEN MODE", "the app", "we", "us") handles information when you use the app. DEGEN MODE is a crypto market-data, alert and read-only public blockchain monitoring application. The app does not provide a custodial wallet, transaction signing, cryptocurrency transfers, trading execution, purchases, sales, swaps or investment advice.</p>
+<div class="notice">DEGEN MODE does not operate a user-account system or a developer-operated analytics/tracking backend. The app does, however, contact third-party market-data, blockchain, font and media services when those features are used.</div>
+
+<h2>1. Information stored on your device</h2>
+<p>Depending on the features you use, DEGEN MODE may store locally on your device:</p>
+<ul><li>tracked coins, token identifiers, contract addresses, display order and cached market data;</li>
+<li>price-alert thresholds, custom alert text, notification state and duplicate-alert prevention state;</li>
+<li>Night Guard, Ninja Radar, Data Inspector and refresh settings;</li>
+<li>public blockchain addresses, optional labels, public holdings/activity snapshots and related display data;</li>
+<li>optional user-provided API credentials for CoinGecko, Helius and Alchemy;</li>
+<li>selected wallpaper/background images, imported sounds, downloaded fonts and other app preferences;</li>
+<li>local diagnostic information used to operate and troubleshoot the app.</li></ul>
+<p>These items are stored inside the Android application sandbox unless you explicitly export or share them. DEGEN MODE does not currently implement an app-level encrypted credential vault. API-key fields are visually masked in the interface and the known credential-bearing stores are excluded from Android automatic backup/device transfer.</p>
+
+<h2>2. API credentials</h2>
+<p>CoinGecko, Helius and Alchemy API credentials are optional. If you enter a credential, it is used only for requests to the corresponding provider. DEGEN MODE does not intentionally send one provider's credential to another provider. Credential values are excluded from DEGEN MODE's manual backup export.</p>
+<p>Because credentials are stored locally as part of app configuration and are accessible to the app's own WebView code, use credentials with the minimum privileges and quotas necessary for DEGEN MODE.</p>
+
+<h2>3. Market-data requests</h2>
+<p>To provide prices, charts, token discovery and related information, DEGEN MODE may contact third-party services such as DexScreener, CoinGecko, CoinPaprika, Binance, OKX, Coinbase, Bybit, Gate.io, Kraken, KuCoin and MEXC.</p>
+<p>Requests may include public trading symbols, coin/token identifiers, contract addresses, search terms, quote currencies, chart parameters or stream subscriptions. The provider also receives normal network information such as your public IP address and connection metadata as part of an internet request.</p>
+
+<h2>4. Read-only public wallet monitoring</h2>
+<p>If you use wallet monitoring or Ninja Radar, DEGEN MODE may send a public blockchain address and related public identifiers to services such as public Solana RPC endpoints, Helius, Alchemy and Blockscout to retrieve public balances, token holdings, transaction signatures, transfers or other public blockchain activity.</p>
+<p><strong>DEGEN MODE does not request or store:</strong></p>
+<ul><li>seed phrases;</li><li>private keys;</li><li>wallet passwords;</li><li>wallet-signing permissions.</li></ul>
+<p>The app does not sign or submit blockchain transactions on your behalf.</p>
+
+<h2>5. Search information</h2>
+<p>When you use an online token/coin search feature, the search term may be sent to the relevant market-data provider to return matching results.</p>
+
+<h2>6. Audio, notifications and text-to-speech</h2>
+<p>DEGEN MODE can use Android notifications, sounds and text-to-speech (TTS) for alerts. TTS text is passed to the TTS engine selected on your Android device. Depending on the TTS provider and device configuration, that engine may process speech locally or use its own network service. Its processing is governed by the provider's own terms and privacy policy.</p>
+<p>DEGEN MODE does not directly record microphone audio. If you choose the record-sound option, the app launches a compatible external Android audio-recorder application. That external app is responsible for its own microphone permission and privacy practices. DEGEN MODE can then import a recording that you explicitly return to the app.</p>
+
+<h2>7. Fonts, logos, images and external content</h2>
+<p>If you select an online font that is not already available locally, the app may contact Google Fonts or the relevant font host. Token logos/background images may be loaded from URLs supplied by market-data providers or configured image hosts. Those hosts receive normal request metadata, including your IP address.</p>
+
+<h2>8. Backups and sharing</h2>
+<p>DEGEN MODE includes an optional manual backup/export feature. A manual backup is an unencrypted ZIP file and may contain, depending on your selections, watchlists, settings, public wallet addresses, alarm configuration, optional Ninja Radar history, selected backgrounds and sounds.</p>
+<p>CoinGecko, Helius and Alchemy API-key fields are removed from the app's manual backup export. A backup may be stored in Downloads or an app-specific Documents location and can be shared through Android's share sheet. Once you export or share a backup, its storage and onward handling are controlled by the destination you choose.</p>
+
+<h2>9. Analytics, advertising and purchases</h2>
+<p>DEGEN MODE currently does not include Firebase Analytics, Google Analytics, AdMob, advertising-ID access, Crashlytics, Sentry, a developer-operated telemetry backend, Google Play Billing, subscriptions or in-app purchases. The current version is free to use.</p>
+
+<h2>10. External apps and websites</h2>
+<p>You may choose to open external websites or Android apps, for example DexScreener, Solscan, Blockscout, a browser, a document picker, an audio recorder or a share destination. These services are independent from DEGEN MODE and are governed by their own privacy policies.</p>
+
+<h2>11. Data retention and deletion</h2>
+<p>DEGEN MODE does not maintain a developer-operated user account or cloud profile. App data is generally retained locally until you delete it, reset relevant settings, clear the app's storage or uninstall the app.</p>
+<p>You can remove individual coins, wallet entries, API credentials and certain app histories from within the app.</p>
+<p>To remove all data stored in DEGEN MODE's private app storage, use Android's <strong>Clear storage / Clear data</strong> function or uninstall the application. Files that you previously exported or shared must be deleted separately from those locations.</p>
+<p>Data sent to third-party providers is subject to those providers' own retention and deletion practices. DEGEN MODE does not control their retention systems.</p>
+
+<h2>12. Security</h2>
+<p>Known production API connections use HTTPS or WSS where applicable, which encrypts data in transit between your device and the relevant service. This is transport encryption and should not be interpreted as end-to-end encryption.</p>
+<p>Android's application sandbox protects private app files from ordinary access by other apps. No security mechanism can provide an absolute guarantee, and you are responsible for protecting your device and any API credentials you choose to enter.</p>
+
+<h2>13. Third-party services</h2>
+<p>DEGEN MODE relies on independent market-data, exchange, blockchain, font, image and Android-system providers. Their retention periods and independent uses of request metadata are governed by their own policies. DEGEN MODE does not make representations about a third party's retention period where that information is not known to the app.</p>
+
+<h2>14. Children</h2>
+<p>DEGEN MODE is intended for adults aged 18 and over and is not designed or directed to children. The app does not provide child accounts, child-directed social features or a family/children SDK.</p>
+
+<h2>15. Changes to this policy</h2>
+<p>This Privacy Policy may be updated when the app's features, data practices, third-party integrations or legal requirements change. The effective date shown at the top of this page will be updated when material changes are published.</p>
+
+<h2>16. Contact</h2>
+<p>Developer / project: <strong>DEGEN MODE</strong><br>Support email: <strong>degenmode.app@proton.me</strong></p>
+<p class="small muted">This policy describes the currently audited DEGEN MODE application behavior. It does not replace the privacy policies of independent third-party services contacted by the app.</p>
+</main>
+<footer><div class="wrap"><a href="index.html">← DEGEN MODE home</a></div></footer>
+</body></html>
