@@ -1,24 +1,32 @@
-DEGEN MODE WEBSITE V2 — REPLACE FILES
+DEGEN MODE WEBSITE V3 — EXACT LOGOS
 
-This package is designed for:
-https://github.com/degenmode-app/degenmode
+This version uses the user's ORIGINAL supplied DEGEN MODE image assets.
 
-1. Extract this ZIP.
-2. In the GitHub repository, upload/replace ALL included files:
-   - index.html
-   - privacy.html
-   - styles.css
-   - logo-icon.png
-   - logo-wordmark.png
-   - favicon.png
-   - moon-bg.jpg
-   - .nojekyll
-3. Commit the changes.
-4. Wait about 1–2 minutes for GitHub Pages to redeploy.
-5. Open:
-   https://degenmode-app.github.io/degenmode/
-6. Privacy Policy remains:
-   https://degenmode-app.github.io/degenmode/privacy.html
+IMPORTANT:
+- app-icon-original.png = exact user-supplied app icon
+- degenmode-wordmark-original.png = crop from the exact user-supplied wordmark image
+  (cropped only; no AI redraw, no recoloring, no warping)
+- moon-bg-original.jpg = exact user-supplied lunar background
+- browser/CSS may scale these images proportionally for layout only
 
-The two phone previews on the homepage are HTML/CSS concept previews using generic coins/backgrounds.
-They intentionally do NOT use your personal family photos or your actual wallpaper selections.
+The phone preview is HTML/CSS, not AI-rendered.
+The BACKGROUNDS screen contains EXACTLY TWO symmetrical preview columns:
+HOME and LOCK.
+
+TO UPDATE GITHUB:
+1. Extract ZIP.
+2. In https://github.com/degenmode-app/degenmode choose Add file → Upload files.
+3. Upload/replace:
+   index.html
+   privacy.html
+   styles.css
+   app-icon-original.png
+   degenmode-wordmark-original.png
+   moon-bg-original.jpg
+   .nojekyll
+4. Commit changes.
+5. Wait 1–2 minutes.
+6. Open https://degenmode-app.github.io/degenmode/
+
+Privacy Policy URL remains:
+https://degenmode-app.github.io/degenmode/privacy.html
