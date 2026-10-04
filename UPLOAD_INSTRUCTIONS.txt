@@ -1,0 +1,24 @@
+DEGEN MODE WEBSITE V2 — REPLACE FILES
+
+This package is designed for:
+https://github.com/degenmode-app/degenmode
+
+1. Extract this ZIP.
+2. In the GitHub repository, upload/replace ALL included files:
+   - index.html
+   - privacy.html
+   - styles.css
+   - logo-icon.png
+   - logo-wordmark.png
+   - favicon.png
+   - moon-bg.jpg
+   - .nojekyll
+3. Commit the changes.
+4. Wait about 1–2 minutes for GitHub Pages to redeploy.
+5. Open:
+   https://degenmode-app.github.io/degenmode/
+6. Privacy Policy remains:
+   https://degenmode-app.github.io/degenmode/privacy.html
+
+The two phone previews on the homepage are HTML/CSS concept previews using generic coins/backgrounds.
+They intentionally do NOT use your personal family photos or your actual wallpaper selections.

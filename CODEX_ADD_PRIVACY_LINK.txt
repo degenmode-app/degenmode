@@ -1,0 +1,37 @@
+DEGEN MODE – ADD PRIVACY POLICY LINK ONLY
+
+PRIVACY POLICY URL:
+https://degenmode-app.github.io/degenmode/privacy.html
+
+Add one Privacy Policy entry in the existing Settings/About area.
+
+Text:
+Privacy Policy
+
+Optional secondary text:
+View how DEGEN MODE handles data
+
+On tap:
+open exactly:
+https://degenmode-app.github.io/degenmode/privacy.html
+
+Use the existing safe HTTPS AndroidBridge.openUrl implementation.
+
+DO NOT change any unrelated system.
+
+DO NOT TOUCH:
+Night Guard, CryptoBackgroundService, BootReceiver, Ninja Radar, Data Inspector,
+refresh timing, providers, WebSockets, alarms, TTS, wallpaper, persistence,
+API-key storage, backup rules, permissions, Billing, RECORD_AUDIO, package,
+SDK versions, signing.
+
+Run relevant tests, normal Lint and release build.
+
+Report:
+- files changed
+- UI location
+- exact URL
+- test result
+- Lint result
+- build result
+- unrelated systems untouched
