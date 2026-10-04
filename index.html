@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>DEGEN MODE — Crypto alerts, wallet tracking and live wallpaper for Android</title>
-<meta name="description" content="DEGEN MODE puts selected crypto prices, charts, price alerts and read-only public wallet activity on your Android home and lock screen. No ads, no tracking.">
+<meta name="description" content="DEGEN MODE puts live crypto prices, price alerts and read-only public wallet activity on your Android home and lock screen. No ads, no tracking.">
 <meta name="theme-color" content="#06030d">
 <meta name="color-scheme" content="dark">
 <meta property="og:type" content="website">
@@ -24,14 +24,6 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<!-- shared SVG gradients for charts -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <linearGradient id="gUp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9ff00" stop-opacity=".38"/><stop offset="1" stop-color="#c9ff00" stop-opacity="0"/></linearGradient>
-    <linearGradient id="gDown" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6f8e" stop-opacity=".32"/><stop offset="1" stop-color="#ff6f8e" stop-opacity="0"/></linearGradient>
-  </defs>
-</svg>
 
 <header class="site-header">
   <div class="wrap nav">
@@ -56,7 +48,7 @@
     <div class="hero-copy">
       <img class="hero-wordmark" src="degenmode-wordmark.webp" srcset="degenmode-wordmark-820.webp 820w, degenmode-wordmark.webp 1647w" sizes="(max-width:600px) 90vw, 520px" width="1647" height="375" alt="DEGEN MODE" fetchpriority="high">
       <h1 class="headline"><span>Crypto alerts<i>.</i></span><span>Wallet tracking<i>.</i></span><span>Live wallpaper<i>.</i></span><span>Market radar<i>.</i></span></h1>
-      <p class="lede">Keep selected crypto prices, charts, alerts and read-only public wallet activity close at hand — without turning DEGEN MODE into a trading or custody app.</p>
+      <p class="lede">Keep live crypto prices, alerts and read-only public wallet activity close at hand — without turning DEGEN MODE into a trading or custody app.</p>
       <div class="cta">
         <span class="btn btn-play" role="note" aria-label="Google Play — coming soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.6v16.8c0 .8.9 1.3 1.6.9l14-8.4c.7-.4.7-1.4 0-1.8l-14-8.4C5.9 2.3 5 2.8 5 3.6z" fill="currentColor"/></svg><span><small>Google Play</small>Coming soon</span></span>
         <a class="btn btn-ghost" href="#features">Explore features</a>
@@ -72,14 +64,14 @@
       <div class="stage">
 
         <!-- Phone A: basket slots -->
-        <div class="phone phone--a" role="img" aria-label="DEGEN MODE app showing basket slots with SOL, BTC and ETH prices and charts">
+        <div class="phone phone--a" role="img" aria-label="DEGEN MODE app showing basket slots with live SOL, BTC, ETH, DOGE, XRP and ADA prices">
           <span class="hw hw-vol"></span><span class="hw hw-pwr"></span>
           <div class="screen" aria-hidden="true">
             <div class="statusbar"><span>9:41</span><span class="cam"></span><span class="sb-icons"><svg viewBox="0 0 16 16" fill="#fff"><rect x="1" y="10" width="2.6" height="4" rx=".6"/><rect x="5" y="7.5" width="2.6" height="6.5" rx=".6"/><rect x="9" y="5" width="2.6" height="9" rx=".6"/><rect x="13" y="2" width="2.6" height="12" rx=".6" opacity=".4"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M1.5 6a9.5 9.5 0 0 1 13 0M4 8.8a6 6 0 0 1 8 0M6.5 11.5a2.4 2.4 0 0 1 3 0"/></svg><svg class="bat" viewBox="0 0 24 14"><rect x=".8" y="1" width="20" height="12" rx="3" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.4"/><rect x="2.6" y="2.8" width="13" height="8.4" rx="1.6" fill="#fff"/><rect x="21.6" y="4.6" width="1.8" height="4.8" rx=".9" fill="#fff" fill-opacity=".55"/></svg></span></div>
             <div class="app-top">
               <img class="app-wm" src="degenmode-wordmark-820.webp" alt="">
               <div class="seg"><span class="on">Market</span><span>Wallet</span></div>
-              <div class="pro"><div><b>PRO / MODEL 2</b><small>Advanced crypto cockpit</small></div><div class="dots"><i></i><i></i><i></i><i></i></div></div>
+              <div class="pro"><div><b>PRO / MODEL 2</b><small>Advanced crypto cockpit</small></div><div class="dots"><i class="g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.5a7 7 0 0 0-7 7v11.3l2.3-1.6 2.4 1.6 2.3-1.6 2.3 1.6 2.4-1.6 2.3 1.6V9.5a7 7 0 0 0-7-7z"/><circle cx="9.6" cy="10.2" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.4" cy="10.2" r="1.2" fill="currentColor" stroke="none"/></svg></i><i></i><i></i><i></i></div></div>
             </div>
             <div class="panel">
               <div class="panel-h"><b>Basket slots</b><small>16/16 visible</small></div>
@@ -91,7 +83,6 @@
                   <div class="slot-id"><small>Slot #1</small><b>SOL / USD</b></div>
                   <div class="slot-px"><b>143.21 $</b><small class="up">+5.24% (24h)</small></div>
                 </div>
-                <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,23.8 L1.7,21.1 L3.4,21.7 L5.1,22.7 L6.8,26.5 L8.5,27.0 L10.2,21.7 L11.9,19.4 L13.6,14.4 L15.3,12.8 L16.9,10.7 L18.6,9.5 L20.3,16.5 L22.0,12.3 L23.7,9.6 L25.4,7.0 L27.1,14.1 L28.8,21.5 L30.5,25.0 L32.2,26.7 L33.9,25.0 L35.6,24.8 L37.3,22.0 L39.0,24.5 L40.7,22.7 L42.4,20.6 L44.1,23.1 L45.8,15.1 L47.5,12.2 L49.2,6.5 L50.8,8.8 L52.5,11.7 L54.2,12.9 L55.9,12.9 L57.6,9.7 L59.3,8.2 L61.0,9.8 L62.7,13.7 L64.4,15.6 L66.1,9.7 L67.8,12.9 L69.5,11.4 L71.2,9.1 L72.9,15.4 L74.6,14.8 L76.3,8.5 L78.0,17.1 L79.7,18.1 L81.4,18.2 L83.1,21.4 L84.7,18.8 L86.4,18.7 L88.1,24.8 L89.8,20.7 L91.5,17.4 L93.2,12.8 L94.9,5.9 L96.6,3.9 L98.3,3.0 L100.0,8.4 L100,30 L0,30 Z" fill="url(#gUp)"/><path d="M0.0,23.8 L1.7,21.1 L3.4,21.7 L5.1,22.7 L6.8,26.5 L8.5,27.0 L10.2,21.7 L11.9,19.4 L13.6,14.4 L15.3,12.8 L16.9,10.7 L18.6,9.5 L20.3,16.5 L22.0,12.3 L23.7,9.6 L25.4,7.0 L27.1,14.1 L28.8,21.5 L30.5,25.0 L32.2,26.7 L33.9,25.0 L35.6,24.8 L37.3,22.0 L39.0,24.5 L40.7,22.7 L42.4,20.6 L44.1,23.1 L45.8,15.1 L47.5,12.2 L49.2,6.5 L50.8,8.8 L52.5,11.7 L54.2,12.9 L55.9,12.9 L57.6,9.7 L59.3,8.2 L61.0,9.8 L62.7,13.7 L64.4,15.6 L66.1,9.7 L67.8,12.9 L69.5,11.4 L71.2,9.1 L72.9,15.4 L74.6,14.8 L76.3,8.5 L78.0,17.1 L79.7,18.1 L81.4,18.2 L83.1,21.4 L84.7,18.8 L86.4,18.7 L88.1,24.8 L89.8,20.7 L91.5,17.4 L93.2,12.8 L94.9,5.9 L96.6,3.9 L98.3,3.0 L100.0,8.4" fill="none" stroke="#c9ff00" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>
               </div>
 
               <div class="slot">
@@ -100,7 +91,6 @@
                   <div class="slot-id"><small>Slot #2</small><b>BTC / USD</b></div>
                   <div class="slot-px"><b>85,078.77 $</b><small class="up">+0.59% (24h)</small></div>
                 </div>
-                <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,16.6 L1.7,15.4 L3.4,11.8 L5.1,14.0 L6.8,19.3 L8.5,19.8 L10.2,18.2 L11.9,14.3 L13.6,19.1 L15.3,24.3 L16.9,21.8 L18.6,20.3 L20.3,14.7 L22.0,11.2 L23.7,11.8 L25.4,13.1 L27.1,3.5 L28.8,4.8 L30.5,8.1 L32.2,12.7 L33.9,12.5 L35.6,12.2 L37.3,13.8 L39.0,14.2 L40.7,13.4 L42.4,11.0 L44.1,7.1 L45.8,6.5 L47.5,13.6 L49.2,11.2 L50.8,16.8 L52.5,17.7 L54.2,23.6 L55.9,23.8 L57.6,27.0 L59.3,26.4 L61.0,14.1 L62.7,14.5 L64.4,11.5 L66.1,16.8 L67.8,18.1 L69.5,15.9 L71.2,16.5 L72.9,15.3 L74.6,15.1 L76.3,19.2 L78.0,17.3 L79.7,20.6 L81.4,13.7 L83.1,15.9 L84.7,13.5 L86.4,13.7 L88.1,10.3 L89.8,12.9 L91.5,9.3 L93.2,10.0 L94.9,5.4 L96.6,3.3 L98.3,3.0 L100.0,6.2 L100,30 L0,30 Z" fill="url(#gUp)"/><path d="M0.0,16.6 L1.7,15.4 L3.4,11.8 L5.1,14.0 L6.8,19.3 L8.5,19.8 L10.2,18.2 L11.9,14.3 L13.6,19.1 L15.3,24.3 L16.9,21.8 L18.6,20.3 L20.3,14.7 L22.0,11.2 L23.7,11.8 L25.4,13.1 L27.1,3.5 L28.8,4.8 L30.5,8.1 L32.2,12.7 L33.9,12.5 L35.6,12.2 L37.3,13.8 L39.0,14.2 L40.7,13.4 L42.4,11.0 L44.1,7.1 L45.8,6.5 L47.5,13.6 L49.2,11.2 L50.8,16.8 L52.5,17.7 L54.2,23.6 L55.9,23.8 L57.6,27.0 L59.3,26.4 L61.0,14.1 L62.7,14.5 L64.4,11.5 L66.1,16.8 L67.8,18.1 L69.5,15.9 L71.2,16.5 L72.9,15.3 L74.6,15.1 L76.3,19.2 L78.0,17.3 L79.7,20.6 L81.4,13.7 L83.1,15.9 L84.7,13.5 L86.4,13.7 L88.1,10.3 L89.8,12.9 L91.5,9.3 L93.2,10.0 L94.9,5.4 L96.6,3.3 L98.3,3.0 L100.0,6.2" fill="none" stroke="#c9ff00" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>
               </div>
 
               <div class="slot">
@@ -109,7 +99,6 @@
                   <div class="slot-id"><small>Slot #3</small><b>ETH / USD</b></div>
                   <div class="slot-px"><b>2,703.16 $</b><small class="down">−1.12% (24h)</small></div>
                 </div>
-                <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,9.8 L1.7,8.3 L3.4,9.3 L5.1,8.1 L6.8,8.3 L8.5,8.6 L10.2,6.3 L11.9,6.1 L13.6,6.1 L15.3,5.1 L16.9,3.8 L18.6,3.7 L20.3,3.0 L22.0,4.1 L23.7,4.4 L25.4,4.9 L27.1,6.4 L28.8,8.1 L30.5,9.9 L32.2,10.2 L33.9,10.3 L35.6,10.6 L37.3,10.5 L39.0,12.0 L40.7,12.0 L42.4,11.7 L44.1,10.7 L45.8,11.7 L47.5,12.1 L49.2,14.4 L50.8,14.9 L52.5,17.4 L54.2,19.0 L55.9,17.7 L57.6,20.2 L59.3,19.2 L61.0,18.8 L62.7,19.1 L64.4,18.5 L66.1,17.8 L67.8,16.5 L69.5,16.7 L71.2,17.4 L72.9,18.0 L74.6,19.1 L76.3,19.1 L78.0,20.0 L79.7,18.6 L81.4,20.8 L83.1,22.0 L84.7,23.0 L86.4,25.4 L88.1,23.1 L89.8,25.9 L91.5,26.2 L93.2,26.7 L94.9,24.7 L96.6,27.0 L98.3,25.7 L100.0,26.5 L100,30 L0,30 Z" fill="url(#gDown)"/><path d="M0.0,9.8 L1.7,8.3 L3.4,9.3 L5.1,8.1 L6.8,8.3 L8.5,8.6 L10.2,6.3 L11.9,6.1 L13.6,6.1 L15.3,5.1 L16.9,3.8 L18.6,3.7 L20.3,3.0 L22.0,4.1 L23.7,4.4 L25.4,4.9 L27.1,6.4 L28.8,8.1 L30.5,9.9 L32.2,10.2 L33.9,10.3 L35.6,10.6 L37.3,10.5 L39.0,12.0 L40.7,12.0 L42.4,11.7 L44.1,10.7 L45.8,11.7 L47.5,12.1 L49.2,14.4 L50.8,14.9 L52.5,17.4 L54.2,19.0 L55.9,17.7 L57.6,20.2 L59.3,19.2 L61.0,18.8 L62.7,19.1 L64.4,18.5 L66.1,17.8 L67.8,16.5 L69.5,16.7 L71.2,17.4 L72.9,18.0 L74.6,19.1 L76.3,19.1 L78.0,20.0 L79.7,18.6 L81.4,20.8 L83.1,22.0 L84.7,23.0 L86.4,25.4 L88.1,23.1 L89.8,25.9 L91.5,26.2 L93.2,26.7 L94.9,24.7 L96.6,27.0 L98.3,25.7 L100.0,26.5" fill="none" stroke="#ff6f8e" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>
               </div>
 
               <div class="slot">
@@ -118,7 +107,22 @@
                   <div class="slot-id"><small>Slot #4</small><b>DOGE / USD</b></div>
                   <div class="slot-px"><b>0.1874 $</b><small class="up">+2.07% (24h)</small></div>
                 </div>
-                <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,17.5 L1.7,19.7 L3.4,18.2 L5.1,22.6 L6.8,22.7 L8.5,27.0 L10.2,24.7 L11.9,24.2 L13.6,21.4 L15.3,22.3 L16.9,21.4 L18.6,21.8 L20.3,23.1 L22.0,22.7 L23.7,25.0 L25.4,25.6 L27.1,24.1 L28.8,23.8 L30.5,24.5 L32.2,20.1 L33.9,19.9 L35.6,20.9 L37.3,20.4 L39.0,21.3 L40.7,21.9 L42.4,22.5 L44.1,18.4 L45.8,18.2 L47.5,17.8 L49.2,16.3 L50.8,12.2 L52.5,12.5 L54.2,13.6 L55.9,8.7 L57.6,11.4 L59.3,12.0 L61.0,10.5 L62.7,5.9 L64.4,7.7 L66.1,12.3 L67.8,10.9 L69.5,11.8 L71.2,12.4 L72.9,11.3 L74.6,10.8 L76.3,10.1 L78.0,10.8 L79.7,8.1 L81.4,5.1 L83.1,4.9 L84.7,5.6 L86.4,4.1 L88.1,3.0 L89.8,4.9 L91.5,5.7 L93.2,3.5 L94.9,3.5 L96.6,4.1 L98.3,3.5 L100.0,3.5 L100,30 L0,30 Z" fill="url(#gUp)"/><path d="M0.0,17.5 L1.7,19.7 L3.4,18.2 L5.1,22.6 L6.8,22.7 L8.5,27.0 L10.2,24.7 L11.9,24.2 L13.6,21.4 L15.3,22.3 L16.9,21.4 L18.6,21.8 L20.3,23.1 L22.0,22.7 L23.7,25.0 L25.4,25.6 L27.1,24.1 L28.8,23.8 L30.5,24.5 L32.2,20.1 L33.9,19.9 L35.6,20.9 L37.3,20.4 L39.0,21.3 L40.7,21.9 L42.4,22.5 L44.1,18.4 L45.8,18.2 L47.5,17.8 L49.2,16.3 L50.8,12.2 L52.5,12.5 L54.2,13.6 L55.9,8.7 L57.6,11.4 L59.3,12.0 L61.0,10.5 L62.7,5.9 L64.4,7.7 L66.1,12.3 L67.8,10.9 L69.5,11.8 L71.2,12.4 L72.9,11.3 L74.6,10.8 L76.3,10.1 L78.0,10.8 L79.7,8.1 L81.4,5.1 L83.1,4.9 L84.7,5.6 L86.4,4.1 L88.1,3.0 L89.8,4.9 L91.5,5.7 L93.2,3.5 L94.9,3.5 L96.6,4.1 L98.3,3.5 L100.0,3.5" fill="none" stroke="#c9ff00" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>
+              </div>
+
+              <div class="slot">
+                <div class="slot-top">
+                  <span class="coin coin-xrp">X</span>
+                  <div class="slot-id"><small>Slot #5</small><b>XRP / USD</b></div>
+                  <div class="slot-px"><b>2.1376 $</b><small class="down">−0.84% (24h)</small></div>
+                </div>
+              </div>
+
+              <div class="slot">
+                <div class="slot-top">
+                  <span class="coin coin-ada">A</span>
+                  <div class="slot-id"><small>Slot #6</small><b>ADA / USD</b></div>
+                  <div class="slot-px"><b>0.6812 $</b><small class="up">+1.36% (24h)</small></div>
+                </div>
               </div>
             </div>
             <div class="tabbar"><span class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>Watchlist</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>Alerts</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Settings</span></div><span class="gesture"></span>
@@ -133,37 +137,19 @@
             <div class="app-top">
               <img class="app-wm" src="degenmode-wordmark-820.webp" alt="">
               <div class="seg"><span class="on">Market</span><span>Wallet</span></div>
-              <div class="pro"><div><b>PRO / MODEL 2</b><small>Advanced crypto cockpit</small></div><div class="dots"><i></i><i></i><i></i><i></i></div></div>
+              <div class="pro"><div><b>PRO / MODEL 2</b><small>Advanced crypto cockpit</small></div><div class="dots"><i class="g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.5a7 7 0 0 0-7 7v11.3l2.3-1.6 2.4 1.6 2.3-1.6 2.3 1.6 2.4-1.6 2.3 1.6V9.5a7 7 0 0 0-7-7z"/><circle cx="9.6" cy="10.2" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.4" cy="10.2" r="1.2" fill="currentColor" stroke="none"/></svg></i><i></i><i></i><i></i></div></div>
             </div>
             <div class="panel">
               <div class="panel-h"><b>Backgrounds</b></div>
               <div class="bg-grid">
                 <figure class="bg-col">
                   <figcaption>Home</figcaption>
-                  <div class="bg-prev bg-home sel">
-                    <div class="mini-sb"><span>9:41</span><span>●●●</span></div>
-                    <div class="w-glass">
-                      <div class="row"><b>BTC</b><small class="up">+0.59%</small></div>
-                      <span class="big">85,078 $</span>
-                      <svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,16.6 L1.7,15.4 L3.4,11.8 L5.1,14.0 L6.8,19.3 L8.5,19.8 L10.2,18.2 L11.9,14.3 L13.6,19.1 L15.3,24.3 L16.9,21.8 L18.6,20.3 L20.3,14.7 L22.0,11.2 L23.7,11.8 L25.4,13.1 L27.1,3.5 L28.8,4.8 L30.5,8.1 L32.2,12.7 L33.9,12.5 L35.6,12.2 L37.3,13.8 L39.0,14.2 L40.7,13.4 L42.4,11.0 L44.1,7.1 L45.8,6.5 L47.5,13.6 L49.2,11.2 L50.8,16.8 L52.5,17.7 L54.2,23.6 L55.9,23.8 L57.6,27.0 L59.3,26.4 L61.0,14.1 L62.7,14.5 L64.4,11.5 L66.1,16.8 L67.8,18.1 L69.5,15.9 L71.2,16.5 L72.9,15.3 L74.6,15.1 L76.3,19.2 L78.0,17.3 L79.7,20.6 L81.4,13.7 L83.1,15.9 L84.7,13.5 L86.4,13.7 L88.1,10.3 L89.8,12.9 L91.5,9.3 L93.2,10.0 L94.9,5.4 L96.6,3.3 L98.3,3.0 L100.0,6.2 L100,30 L0,30 Z" fill="url(#gUp)"/><path d="M0.0,16.6 L1.7,15.4 L3.4,11.8 L5.1,14.0 L6.8,19.3 L8.5,19.8 L10.2,18.2 L11.9,14.3 L13.6,19.1 L15.3,24.3 L16.9,21.8 L18.6,20.3 L20.3,14.7 L22.0,11.2 L23.7,11.8 L25.4,13.1 L27.1,3.5 L28.8,4.8 L30.5,8.1 L32.2,12.7 L33.9,12.5 L35.6,12.2 L37.3,13.8 L39.0,14.2 L40.7,13.4 L42.4,11.0 L44.1,7.1 L45.8,6.5 L47.5,13.6 L49.2,11.2 L50.8,16.8 L52.5,17.7 L54.2,23.6 L55.9,23.8 L57.6,27.0 L59.3,26.4 L61.0,14.1 L62.7,14.5 L64.4,11.5 L66.1,16.8 L67.8,18.1 L69.5,15.9 L71.2,16.5 L72.9,15.3 L74.6,15.1 L76.3,19.2 L78.0,17.3 L79.7,20.6 L81.4,13.7 L83.1,15.9 L84.7,13.5 L86.4,13.7 L88.1,10.3 L89.8,12.9 L91.5,9.3 L93.2,10.0 L94.9,5.4 L96.6,3.3 L98.3,3.0 L100.0,6.2" fill="none" stroke="#c9ff00" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg>
-                    </div>
-                    <div class="w-glass compact">
-                      <div class="row"><b>SOL</b><small class="up">+5.24%</small></div>
-                      <span class="big">143.21 $</span>
-                    </div>
-                    <div class="dock"><i></i><i></i><i></i><i></i></div>
-                  </div>
+                  <div class="bg-prev bg-home sel"></div>
                   <div class="pe"><span>Pick</span><span>Edit</span></div>
                 </figure>
                 <figure class="bg-col">
                   <figcaption>Lock</figcaption>
-                  <div class="bg-prev bg-lock">
-                    <div class="mini-sb"><span></span><span>●●●</span></div>
-                    <div class="lock-clock">9:41</div>
-                    <div class="lock-date">Sunday, 4 October</div>
-                    <div class="lock-chip"><span>SOL</span><span>143.21 $</span><span class="up">+5.24%</span></div>
-                    <div class="lock-foot"><i></i><i></i></div>
-                  </div>
+                  <div class="bg-prev bg-lock"></div>
                   <div class="pe"><span>Pick</span><span>Edit</span></div>
                 </figure>
               </div>
@@ -185,7 +171,7 @@
   <div class="wrap">
     <header class="sec-head">
       <h2>Made to stay visible, not get in the way.</h2>
-      <p>Live wallpaper, alerts, market data and read-only public wallet monitoring in one Android app. Coins and wallpapers on this page are demo examples.</p>
+      <p>Live wallpaper, price alerts, live prices, Ghost Mode and read-only public wallet monitoring in one Android app. Coins and wallpapers on this page are demo examples.</p>
     </header>
 
     <div class="bento">
@@ -224,31 +210,54 @@
         <h3>Live Wallpaper &amp; Watchlist</h3>
         <p>Put your watchlist on the Android home or lock screen, so prices are there the moment you pick up your phone.</p>
         <div class="f-visual">
-          <ul class="watch">
-            <li><span class="coin coin-sol"><svg viewBox="0 0 24 24"><path d="M7.6 6h11.2l-2.4 2.6H5.2zM5.2 10.7h11.2l2.4 2.6H7.6zM7.6 15.4h11.2l-2.4 2.6H5.2z" fill="#fff"/></svg></span><b>SOL</b><svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,23.8 L1.7,21.1 L3.4,21.7 L5.1,22.7 L6.8,26.5 L8.5,27.0 L10.2,21.7 L11.9,19.4 L13.6,14.4 L15.3,12.8 L16.9,10.7 L18.6,9.5 L20.3,16.5 L22.0,12.3 L23.7,9.6 L25.4,7.0 L27.1,14.1 L28.8,21.5 L30.5,25.0 L32.2,26.7 L33.9,25.0 L35.6,24.8 L37.3,22.0 L39.0,24.5 L40.7,22.7 L42.4,20.6 L44.1,23.1 L45.8,15.1 L47.5,12.2 L49.2,6.5 L50.8,8.8 L52.5,11.7 L54.2,12.9 L55.9,12.9 L57.6,9.7 L59.3,8.2 L61.0,9.8 L62.7,13.7 L64.4,15.6 L66.1,9.7 L67.8,12.9 L69.5,11.4 L71.2,9.1 L72.9,15.4 L74.6,14.8 L76.3,8.5 L78.0,17.1 L79.7,18.1 L81.4,18.2 L83.1,21.4 L84.7,18.8 L86.4,18.7 L88.1,24.8 L89.8,20.7 L91.5,17.4 L93.2,12.8 L94.9,5.9 L96.6,3.9 L98.3,3.0 L100.0,8.4" fill="none" stroke="#c9ff00" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg><span class="px">143.21 $<small class="up">+5.24%</small></span></li>
-            <li><span class="coin coin-btc"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h5.2a3 3 0 0 1 0 6H8zM8 12h6a3 3 0 0 1 0 6H8zM8 6v12M10.5 3.8V6M13.5 3.8V6M10.5 18v2.2M13.5 18v2.2"/></svg></span><b>BTC</b><svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,16.6 L1.7,15.4 L3.4,11.8 L5.1,14.0 L6.8,19.3 L8.5,19.8 L10.2,18.2 L11.9,14.3 L13.6,19.1 L15.3,24.3 L16.9,21.8 L18.6,20.3 L20.3,14.7 L22.0,11.2 L23.7,11.8 L25.4,13.1 L27.1,3.5 L28.8,4.8 L30.5,8.1 L32.2,12.7 L33.9,12.5 L35.6,12.2 L37.3,13.8 L39.0,14.2 L40.7,13.4 L42.4,11.0 L44.1,7.1 L45.8,6.5 L47.5,13.6 L49.2,11.2 L50.8,16.8 L52.5,17.7 L54.2,23.6 L55.9,23.8 L57.6,27.0 L59.3,26.4 L61.0,14.1 L62.7,14.5 L64.4,11.5 L66.1,16.8 L67.8,18.1 L69.5,15.9 L71.2,16.5 L72.9,15.3 L74.6,15.1 L76.3,19.2 L78.0,17.3 L79.7,20.6 L81.4,13.7 L83.1,15.9 L84.7,13.5 L86.4,13.7 L88.1,10.3 L89.8,12.9 L91.5,9.3 L93.2,10.0 L94.9,5.4 L96.6,3.3 L98.3,3.0 L100.0,6.2" fill="none" stroke="#c9ff00" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg><span class="px">85,078.77 $<small class="up">+0.59%</small></span></li>
-            <li><span class="coin coin-eth"><svg viewBox="0 0 24 24"><path d="M12 2.8l5.6 9.3L12 15.4l-5.6-3.3z" fill="#fff"/><path d="M6.4 13.3 12 21.2l5.6-7.9L12 16.6z" fill="#fff" opacity=".8"/></svg></span><b>ETH</b><svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0.0,9.8 L1.7,8.3 L3.4,9.3 L5.1,8.1 L6.8,8.3 L8.5,8.6 L10.2,6.3 L11.9,6.1 L13.6,6.1 L15.3,5.1 L16.9,3.8 L18.6,3.7 L20.3,3.0 L22.0,4.1 L23.7,4.4 L25.4,4.9 L27.1,6.4 L28.8,8.1 L30.5,9.9 L32.2,10.2 L33.9,10.3 L35.6,10.6 L37.3,10.5 L39.0,12.0 L40.7,12.0 L42.4,11.7 L44.1,10.7 L45.8,11.7 L47.5,12.1 L49.2,14.4 L50.8,14.9 L52.5,17.4 L54.2,19.0 L55.9,17.7 L57.6,20.2 L59.3,19.2 L61.0,18.8 L62.7,19.1 L64.4,18.5 L66.1,17.8 L67.8,16.5 L69.5,16.7 L71.2,17.4 L72.9,18.0 L74.6,19.1 L76.3,19.1 L78.0,20.0 L79.7,18.6 L81.4,20.8 L83.1,22.0 L84.7,23.0 L86.4,25.4 L88.1,23.1 L89.8,25.9 L91.5,26.2 L93.2,26.7 L94.9,24.7 L96.6,27.0 L98.3,25.7 L100.0,26.5" fill="none" stroke="#ff6f8e" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg><span class="px">2,703.16 $<small class="down">−1.12%</small></span></li>
-          </ul>
+          <div class="wall-demo" aria-hidden="true">
+            <div class="wall-screen">
+              <div class="wall-clock">9:41</div>
+              <div class="wall-date">Sunday, 4 October</div>
+              <div class="wall-list">
+                <div><b>SOL</b><span>143.21 $</span><small class="up">+5.24%</small></div>
+                <div><b>BTC</b><span>85,078.77 $</span><small class="up">+0.59%</small></div>
+                <div><b>ETH</b><span>2,703.16 $</span><small class="down">−1.12%</small></div>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 
-      <article class="f f-charts">
-        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
-        <h3>Live Charts</h3>
-        <p>Prices and charts for the coins you choose, pulled from several market-data providers and exchange streams.</p>
+      <article class="f f-prices">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H12L11 22l8.5-11.5H12z"/></svg></div>
+        <h3>Live Prices</h3>
+        <p>Prices for the coins you choose update on their own, streamed from exchanges and market-data providers. No pull-to-refresh needed.</p>
         <div class="f-visual">
-          <div class="chart-card">
-            <div class="chart-top">
-              <div><b>SOL / USD</b><div class="px">143.21 $ <small class="up" style="font-family:var(--body);font-size:.9rem">+5.24%</small></div></div>
-              <div class="tf" aria-hidden="true"><span>1H</span><span class="on">4H</span><span>1D</span><span>1W</span></div>
-            </div>
-            <svg class="chart-svg" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M0,7.5 H100" stroke="#f2c14e" stroke-width="1" stroke-dasharray="4 4" vector-effect="non-scaling-stroke" opacity=".8"/>
-              <path d="M0.0,26.7 L1.1,24.2 L2.2,25.5 L3.4,27.0 L4.5,26.2 L5.6,22.9 L6.7,22.0 L7.9,24.0 L9.0,25.3 L10.1,25.2 L11.2,23.3 L12.4,23.2 L13.5,23.7 L14.6,24.0 L15.7,23.5 L16.9,24.7 L18.0,24.6 L19.1,23.9 L20.2,20.8 L21.3,20.7 L22.5,18.8 L23.6,20.5 L24.7,18.8 L25.8,18.4 L27.0,19.2 L28.1,19.1 L29.2,17.3 L30.3,17.7 L31.5,15.7 L32.6,12.7 L33.7,9.6 L34.8,6.5 L36.0,8.7 L37.1,7.9 L38.2,9.0 L39.3,7.1 L40.4,6.8 L41.6,6.2 L42.7,5.2 L43.8,6.2 L44.9,5.8 L46.1,7.0 L47.2,3.0 L48.3,3.7 L49.4,3.5 L50.6,6.6 L51.7,9.1 L52.8,10.5 L53.9,8.9 L55.1,7.3 L56.2,6.6 L57.3,7.6 L58.4,4.1 L59.6,5.8 L60.7,7.2 L61.8,6.2 L62.9,7.8 L64.0,7.2 L65.2,5.2 L66.3,5.2 L67.4,4.3 L68.5,4.1 L69.7,5.1 L70.8,10.8 L71.9,12.9 L73.0,12.7 L74.2,15.6 L75.3,16.5 L76.4,15.9 L77.5,13.3 L78.7,15.7 L79.8,16.5 L80.9,15.9 L82.0,14.8 L83.1,17.2 L84.3,13.6 L85.4,14.9 L86.5,12.8 L87.6,13.0 L88.8,12.1 L89.9,8.8 L91.0,7.3 L92.1,6.9 L93.3,8.6 L94.4,9.7 L95.5,12.2 L96.6,8.3 L97.8,11.0 L98.9,15.6 L100.0,12.4 L100,30 L0,30 Z" fill="url(#gUp)"/>
-              <path d="M0.0,26.7 L1.1,24.2 L2.2,25.5 L3.4,27.0 L4.5,26.2 L5.6,22.9 L6.7,22.0 L7.9,24.0 L9.0,25.3 L10.1,25.2 L11.2,23.3 L12.4,23.2 L13.5,23.7 L14.6,24.0 L15.7,23.5 L16.9,24.7 L18.0,24.6 L19.1,23.9 L20.2,20.8 L21.3,20.7 L22.5,18.8 L23.6,20.5 L24.7,18.8 L25.8,18.4 L27.0,19.2 L28.1,19.1 L29.2,17.3 L30.3,17.7 L31.5,15.7 L32.6,12.7 L33.7,9.6 L34.8,6.5 L36.0,8.7 L37.1,7.9 L38.2,9.0 L39.3,7.1 L40.4,6.8 L41.6,6.2 L42.7,5.2 L43.8,6.2 L44.9,5.8 L46.1,7.0 L47.2,3.0 L48.3,3.7 L49.4,3.5 L50.6,6.6 L51.7,9.1 L52.8,10.5 L53.9,8.9 L55.1,7.3 L56.2,6.6 L57.3,7.6 L58.4,4.1 L59.6,5.8 L60.7,7.2 L61.8,6.2 L62.9,7.8 L64.0,7.2 L65.2,5.2 L66.3,5.2 L67.4,4.3 L68.5,4.1 L69.7,5.1 L70.8,10.8 L71.9,12.9 L73.0,12.7 L74.2,15.6 L75.3,16.5 L76.4,15.9 L77.5,13.3 L78.7,15.7 L79.8,16.5 L80.9,15.9 L82.0,14.8 L83.1,17.2 L84.3,13.6 L85.4,14.9 L86.5,12.8 L87.6,13.0 L88.8,12.1 L89.9,8.8 L91.0,7.3 L92.1,6.9 L93.3,8.6 L94.4,9.7 L95.5,12.2 L96.6,8.3 L97.8,11.0 L98.9,15.6 L100.0,12.4" fill="none" stroke="#c9ff00" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-            </svg>
+          <ul class="watch">
+            <li><span class="coin coin-sol"><svg viewBox="0 0 24 24"><path d="M7.6 6h11.2l-2.4 2.6H5.2zM5.2 10.7h11.2l2.4 2.6H7.6zM7.6 15.4h11.2l-2.4 2.6H5.2z" fill="#fff"/></svg></span><b>SOL / USD</b><span class="live">Live</span><span class="px">143.21 $<small class="up">+5.24%</small></span></li>
+            <li><span class="coin coin-btc"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h5.2a3 3 0 0 1 0 6H8zM8 12h6a3 3 0 0 1 0 6H8zM8 6v12M10.5 3.8V6M13.5 3.8V6M10.5 18v2.2M13.5 18v2.2"/></svg></span><b>BTC / USD</b><span class="live">Live</span><span class="px">85,078.77 $<small class="up">+0.59%</small></span></li>
+            <li><span class="coin coin-eth"><svg viewBox="0 0 24 24"><path d="M12 2.8l5.6 9.3L12 15.4l-5.6-3.3z" fill="#fff"/><path d="M6.4 13.3 12 21.2l5.6-7.9L12 16.6z" fill="#fff" opacity=".8"/></svg></span><b>ETH / USD</b><span class="live">Live</span><span class="px">2,703.16 $<small class="down">−1.12%</small></span></li>
+            <li><span class="coin coin-doge">D</span><b>DOGE / USD</b><span class="live">Live</span><span class="px">0.1874 $<small class="up">+2.07%</small></span></li>
+          </ul>
+          <p class="providers">Sources include DexScreener, CoinGecko, CoinPaprika, Binance, Coinbase, Kraken, OKX and others.</p>
+        </div>
+      </article>
+
+      <article class="f f-ghost">
+        <div class="ghost-copy">
+          <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.5a7 7 0 0 0-7 7v11.3l2.3-1.6 2.4 1.6 2.3-1.6 2.3 1.6 2.4-1.6 2.3 1.6V9.5a7 7 0 0 0-7-7z"/><circle cx="9.6" cy="10.2" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.4" cy="10.2" r="1.2" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Ghost Mode</h3>
+          <p>Someone looking over your shoulder? Tap the ghost icon and every price on screen disappears in an instant. Turn it off and your numbers are back.</p>
+        </div>
+        <div class="ghost-demo" aria-hidden="true">
+          <div class="ghost-panel">
+            <div class="ghost-head"><span>Ghost Mode off</span><i class="ghost-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.5a7 7 0 0 0-7 7v11.3l2.3-1.6 2.4 1.6 2.3-1.6 2.3 1.6 2.4-1.6 2.3 1.6V9.5a7 7 0 0 0-7-7z"/><circle cx="9.6" cy="10.2" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.4" cy="10.2" r="1.2" fill="currentColor" stroke="none"/></svg></i></div>
+            <div class="ghost-row"><b>SOL</b><span>143.21 $</span></div>
+            <div class="ghost-row"><b>BTC</b><span>85,078.77 $</span></div>
+            <div class="ghost-row"><b>Wallet</b><span>12,480.50 $</span></div>
           </div>
-          <p class="providers">Sources include DexScreener, CoinGecko, CoinPaprika, Binance, Coinbase, Kraken, OKX and others. The dashed line marks a price alert.</p>
+          <div class="ghost-panel is-on">
+            <div class="ghost-head"><span>Ghost Mode on</span><i class="ghost-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2.5a7 7 0 0 0-7 7v11.3l2.3-1.6 2.4 1.6 2.3-1.6 2.3 1.6 2.4-1.6 2.3 1.6V9.5a7 7 0 0 0-7-7z"/><circle cx="9.6" cy="10.2" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.4" cy="10.2" r="1.2" fill="currentColor" stroke="none"/></svg></i></div>
+            <div class="ghost-row"><b>SOL</b><span class="masked">••••••</span></div>
+            <div class="ghost-row"><b>BTC</b><span class="masked">••••••••</span></div>
+            <div class="ghost-row"><b>Wallet</b><span class="masked">••••••••</span></div>
+          </div>
         </div>
       </article>
     </div>

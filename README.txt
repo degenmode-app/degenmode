@@ -1,12 +1,12 @@
-DEGEN MODE — spletna stran (GitHub Pages)
+DEGEN MODE - spletna stran (GitHub Pages), koncna verzija
 
-V koren repozitorija degenmode-app/degenmode naloži VSEBINO te mape:
-  index.html, privacy.html, styles.css, favicon.ico, site.webmanifest, .nojekyll
-  mapa assets/ (slike, ikone, fonti)
+Vse datoteke so v enem nivoju (brez map).
+1. Razsiri ZIP.
+2. GitHub -> degenmode-app/degenmode -> Add file -> Upload files
+3. Oznaci VSE datoteke (Ctrl+A) in jih povleci v okno -> Commit changes
+4. Pocakaj 1-2 min, stran odpri v zasebnem oknu (Ctrl+Shift+P):
+   https://degenmode-app.github.io/degenmode/
 
-Stare slike v korenu (phones-4k.png, moon-bg-*.jpg, app-icon-original.png,
-degenmode-wordmark-*.png, favicon.png ...) nova stran ne uporablja več - lahko jih izbrišeš.
-
-Privacy URL ostane enak: https://degenmode-app.github.io/degenmode/privacy.html
-Fonti (Unbounded, Manrope) so lokalni, licenca SIL OFL v assets/fonts/.
-Brez JavaScripta, brez piškotkov, brez analitike, brez zunanjih zahtevkov.
+Privacy URL: https://degenmode-app.github.io/degenmode/privacy.html
+Brez JavaScripta, piskotkov, analitike in zunanjih zahtevkov.
+Fonti Unbounded in Manrope: licenca SIL OFL (LICENSE-*.txt).
